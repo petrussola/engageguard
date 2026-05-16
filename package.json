@@ -6,6 +6,7 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch",
+    "chrome:zip": "npm run build && mkdir -p artifacts && cd dist && zip -r ../artifacts/youtube-engage-o-meter-chrome.zip .",
     "firefox:zip": "npm run build && mkdir -p artifacts && cd dist && zip -r ../artifacts/youtube-engage-o-meter-firefox.zip .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

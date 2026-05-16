@@ -145,6 +145,15 @@ permanently, but the temporary add-on flow works for local development.
 
 If you rebuild, reload the extension in `chrome://extensions` and refresh the YouTube tab.
 
+Package a ZIP for Chrome Web Store upload:
+
+```bash
+npm run chrome:zip
+```
+
+Upload `artifacts/youtube-engage-o-meter-chrome.zip`, not the repository source
+ZIP. The archive must contain `manifest.json` and `content.js` at its top level.
+
 ## Debug Mode
 
 Open the extension popup on a YouTube watch page and turn on **Debug details**
